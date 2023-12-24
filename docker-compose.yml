@@ -7,9 +7,6 @@ services:
       - mysqldata:/var/lib/mysql
       - mysqlconfig:/etc/mysql/my.cnf
 
-    environment:
-      - MYSQL_ROOT_PASSWORD=bt7LaWX773n2fdHp
-
 volumes:
   mysqlconfig:
   mysqldata:
