@@ -8,6 +8,10 @@ services:
       - mysqldata:/var/lib/mysql
       - mysqlconfig:/etc/mysql/my.cnf
 
+    environment:
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
+      - MYSQL_ONETIME_PASSWORD=yes
+
 volumes:
   mysqlconfig:
   mysqldata:
